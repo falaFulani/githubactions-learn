@@ -23,3 +23,7 @@ jobs:
     steps:
       - name: checkout files
         uses: actions/checkout@v2
+      - name: check files
+        run: |
+          pwd
+          ls -a
