@@ -1,5 +1,10 @@
 name: Git Hub Actions Demo 
-on: [push, pull_request, issues] 
+on: 
+  #push:
+  pull_request:
+    types: [closed, assigned, opened, reopened]
+  issues: 
+    types: [opened]
 jobs:
   Example-Actions-Jobs: 
     name: Exploring Github Actions 
