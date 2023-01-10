@@ -12,7 +12,7 @@ jobs:
     needs: Example-Actions-Jobs
     steps:
       - name: update ubuntu
-        run: apt get updates 
+        run: echo "Hello world"
       - name: check versions 
         run: |
           node -v 
